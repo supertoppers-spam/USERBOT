@@ -94,7 +94,11 @@ LOOP = asyncio.get_event_loop()
 
 trl = Translator()
 
-aiosession = ClientSession()
+try:
+    LOOP = asyncio.get_running_loop()
+except RuntimeError:
+    LOOP = asyncio.new_event_loop()
+    asyncio.set_event_loop(LOOP)
 
 CMD_HELP = {}
 
