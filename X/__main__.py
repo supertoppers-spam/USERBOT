@@ -5,7 +5,7 @@ from uvloop import install
 
 
 from X.modules import ALL_MODULES
-from X import BOTLOG_CHATID, LOGGER, LOOP, aiosession, app, bots, ids, bot1
+from X import *
 from X.helpers import join
 from X.helpers.misc import create_botlog, heroku
 
