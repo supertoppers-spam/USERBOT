@@ -1,4 +1,5 @@
 import importlib
+import asyncio
 from pyrogram import idle
 from uvloop import install
 
@@ -11,11 +12,11 @@ from X.helpers.misc import create_botlog, heroku
 BOT_VER = "3.0.0"
 CMD_HANDLER = ["." "?" "!" "*"]
 MSG_ON = """
-✧✧ **𝐃ɪᴄᴛᴀᴛᴏʀ 𝐔sᴇʀ𝐁ᴏᴛ 𝐈s 𝐀ʟɪᴠᴇ** ✧✧
+✧✧ 𝐃ɪᴄᴛᴀᴛᴏʀ 𝐔sᴇʀ𝐁ᴏᴛ 𝐈s 𝐀ʟɪᴠᴇ ✧✧
 ▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭
 
-➥ **𝐃ɪᴄᴛᴀᴛᴏʀ 𝐕ᴇʀsɪᴏɴ 🥀 ** `{}`
-➥ **𝐓ʏᴘᴇ** **.alive** **𝐓ᴏ 𝐂ʜᴇᴄᴋ 𝐀ʟɪᴠᴇ 𝐎ғ 𝐃ɪᴄᴛᴀᴛᴏʀ 𝐔sᴇʀ𝐁ᴏᴛ**
+➥ 𝐃ɪᴄᴛᴀᴛᴏʀ 𝐕ᴇʀsɪᴏɴ 🥀  {}
+➥ 𝐓ʏᴘᴇ .alive 𝐓ᴏ 𝐂ʜᴇᴄᴋ 𝐀ʟɪᴠᴇ 𝐎ғ 𝐃ɪᴄᴛᴀᴛᴏʀ 𝐔sᴇʀ𝐁ᴏᴛ
 ▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭
 ➥ 𝐎ᴡɴᴇʀ :- @SAIF_DICTATOR
 ➥ 𝐆ʀᴘ :- @DEAD_GRPCHAT
@@ -48,9 +49,8 @@ async def main():
     await idle()
     await aiosession.close()
 
-
-if __name__ == "__main__":
+if name == "main":
     LOGGER("X").info("𝐷𝛪𝐶𝛵𝛥𝛵𝛩𝛤 𝑈𝑆𝛴𝛤𝛣𝛩𝛵 𝛪𝑆 𝑆𝛹𝛥𝛤𝛵𝛴𝐷 ✨")
     install()
     heroku()
-    LOOP.run_until_complete(main())
+    asyncio.run(main())
