@@ -15,12 +15,12 @@ BOTLOG_CHATID = int(getenv("BOTLOG_CHATID") or 0)
 BOT_VER = "3.0.0@main"
 BRANCH = getenv("BRANCH", "main") #don't change this line 
 CMD_HNDLR = cmd
-OWNER_ID = getenv("OWNER_ID", "")
+OWNER_ID = getenv("OWNER_ID", "8181241262")
 BOT_TOKEN = getenv("BOT_TOKEN", "none")
 OPENAI_API_KEY = getenv("OPENAI_API_KEY", "")
 CHANNEL = getenv("CHANNEL", "SAIFALLBOT")
 CMD_HANDLER = getenv("CMD_HANDLER", ".")
-DB_URL = getenv("DATABASE_URL", "")
+DB_URL = getenv("DATABASE_URL", "mongodb+srv://sujoy123m:wTWKGUaxYE7dxb1l@cluster0.zorxb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 GIT_TOKEN = getenv("GIT_TOKEN", "")
 GROUP = getenv("GROUP", "DEAD_GRPCHAT")
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
